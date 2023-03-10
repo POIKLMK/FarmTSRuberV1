@@ -1,0 +1,36 @@
+_G.Farm = true -- true / false
+while _G.Farm do wait()
+    local args = {
+    [1] = "TSRubber",
+    [2] = "JetPistol",
+    [3] = {}
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("ReplicatorNoYield"):FireServer(unpack(args))
+
+local args = {
+    [1] = "TSRubber",
+    [2] = "GrizzlyMagnum",
+    [3] = {
+        ["MouseRay"] = {
+            ["Normal"] = Vector3.new(-1, 0, 0),
+            ["Direction"] = Vector3.new(269.75390625, -44.833316802978516, -123.38077545166016),
+            ["Origin"] = Vector3.new(2402.8408203125, 717.8834228515625, 897.2282104492188),
+            ["Instance"] = workspace:WaitForChild("Map"):WaitForChild("Part"),
+            ["Distance"] = 26.86802101135254,
+            ["Position"] = Vector3.new(2427, 713.8681640625, 886.17822265625),
+            ["Material"] = Enum.Material.Slate
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("ReplicatorNoYield"):FireServer(unpack(args))
+local args = {
+    [1] = "TSRubber",
+    [2] = "RedHawk",
+    [3] = {}
+}
+
+game:GetService("ReplicatedStorage").ReplicatorNoYield:FireServer(unpack(args))
+
+end
